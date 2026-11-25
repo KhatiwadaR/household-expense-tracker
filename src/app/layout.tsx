@@ -14,12 +14,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Household Expense Tracker',
-  description: 'Track your monthly household expenses, manage your spending, and export your expense data as CSV.',
+  description:
+    'Track your monthly household expenses, manage your spending, and export your expense data as CSV.',
 };
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

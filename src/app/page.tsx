@@ -6,7 +6,7 @@ import About from '@/components/homepage/About';
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="flex flex-col items-center justify-between gap-4 p-4 w-full">
       <Header />
       <Home />
       <Features />

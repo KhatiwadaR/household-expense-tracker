@@ -7,10 +7,10 @@ import { ChartNoAxesColumnIncreasing, MoveRight } from 'lucide-react';
 
 export default function Home() {
   return (
-    <section id="home">
-      <div>
-        <p>
-          <ChartNoAxesColumnIncreasing size={30} />
+    <section id="home" className="flex">
+      <div className="flex flex-col gap-2">
+        <p className="flex gap-2">
+          <ChartNoAxesColumnIncreasing />
           <span>Smart. Simple. Free</span>
         </p>
 
@@ -23,8 +23,8 @@ export default function Home() {
           goals.
         </p>
 
-        <Link href="/dashboard">
-          Start Tracking Free <MoveRight size={30} />
+        <Link href="/dashboard" className="flex gap-2">
+          Start Tracking Free <MoveRight />
         </Link>
       </div>
 

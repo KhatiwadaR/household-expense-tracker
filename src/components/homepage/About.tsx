@@ -1,5 +1,7 @@
 'use client';
 
+import { CircleCheck } from 'lucide-react';
+
 export default function About() {
   const usefulness = [
     'Easy to use and beginner-friendly',
@@ -8,9 +10,9 @@ export default function About() {
     'Works on any device',
   ];
   return (
-    <section id="about">
+    <section id="about" className="flex flex-col gap-2">
       <div></div>
-      <div>
+      <div className="flex flex-col gap-2">
         <h2>Why Choose Us?</h2>
         <p>
           A simple and effective way to manage your household finances, designed
@@ -18,7 +20,10 @@ export default function About() {
         </p>
         <ul>
           {usefulness.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} className="flex gap-2">
+              <CircleCheck />
+              <span>{item}</span>
+            </li>
           ))}
         </ul>
       </div>
