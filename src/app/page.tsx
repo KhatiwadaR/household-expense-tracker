@@ -1,5 +1,10 @@
 //import Link from 'next/link';
+import Header from '@/components/layout/Header';
 
 export default function HomePage() {
-  return <p>hello</p>;
+  return (
+    <main>
+      <Header />
+    </main>
+  );
 }
